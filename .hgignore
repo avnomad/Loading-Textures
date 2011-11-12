@@ -1,0 +1,7 @@
+syntax: regexp
+Debug/*
+ipch/*
+syntax: glob
+texture play.sdf
+texture play.opensdf
+texture play.suo
