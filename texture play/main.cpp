@@ -157,7 +157,7 @@ int main(int argc, char **argv)
 	GLubyte *image;
 	GLint width,height;
 
-	image = load_image("c:/input/ppm/3.ppm",width,height);
+	image = load_image("ppm/1.ppm",width,height);
 	glBindTexture(GL_TEXTURE_2D,textures[0]);
 	glTexImage2D(GL_TEXTURE_2D,0,GL_RGB,width,height,0,GL_RGB,GL_UNSIGNED_BYTE,image);
 	glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_LINEAR);
@@ -165,7 +165,7 @@ int main(int argc, char **argv)
 	glGenerateMipmap(GL_TEXTURE_2D);
 	delete[] image;
 
-	image = load_image("c:/input/ppm/4.ppm",width,height);
+	image = load_image("ppm/2.ppm",width,height);
 	glBindTexture(GL_TEXTURE_2D,textures[1]);
 	glTexImage2D(GL_TEXTURE_2D,0,GL_RGB,width,height,0,GL_RGB,GL_UNSIGNED_BYTE,image);
 	glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_LINEAR);
@@ -173,7 +173,7 @@ int main(int argc, char **argv)
 	glGenerateMipmap(GL_TEXTURE_2D);
 	delete[] image;
 
-	image = load_image("c:/input/ppm/2.ppm",width,height);
+	image = load_image("ppm/3.ppm",width,height);
 	glBindTexture(GL_TEXTURE_2D,textures[2]);
 	glTexImage2D(GL_TEXTURE_2D,0,GL_RGB,width,height,0,GL_RGB,GL_UNSIGNED_BYTE,image);
 	glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_LINEAR);
@@ -181,7 +181,7 @@ int main(int argc, char **argv)
 	glGenerateMipmap(GL_TEXTURE_2D);
 	delete[] image;
 
-	image = load_image("c:/input/ppm/1.ppm",width,height);
+	image = load_image("ppm/4.ppm",width,height);
 	glBindTexture(GL_TEXTURE_2D,textures[3]);
 	glTexImage2D(GL_TEXTURE_2D,0,GL_RGB,width,height,0,GL_RGB,GL_UNSIGNED_BYTE,image);
 	glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_LINEAR);
