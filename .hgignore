@@ -4,6 +4,6 @@ ipch/*
 Release/*
 ppm/*
 syntax: glob
-texture play.sdf
-texture play.opensdf
-texture play.suo
+Loading Textures.sdf
+Loading Textures.opensdf
+Loading Textures.suo
